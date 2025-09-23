@@ -11,7 +11,7 @@ where
 -- we place 'poisonWindows' calls in any functions that are not supported on
 -- Windows to generate an early and loud failure.
 poisonWindows :: Monad m => m ()
-#if defined(mingw32_HOST_OS)
+#if defined(mingw32_HOST_OS) || defined(wasm32_HOST_ARCH)
 poisonWindows = error "This functionality is not supported on Windows"
 #else
 poisonWindows = return()
