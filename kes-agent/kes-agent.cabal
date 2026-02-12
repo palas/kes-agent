@@ -268,7 +268,7 @@ test-suite kes-agent-tests
                  , primitive >=0.7.4 && <0.10
                  , process
                  , QuickCheck
-                 , random >=1.2.1 && <1.3
+                 , random >=1.2.1 && <1.4
                  , serdoc-core
                  , tasty
                  , tasty-hunit
