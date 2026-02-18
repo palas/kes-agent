@@ -43,7 +43,57 @@ package cardano-crypto-class
 source-repository-package
   type: git
   location: https://github.com/IntersectMBO/ouroboros-network
-  tag: 892ba32f890c2558dc1dec008844779c83bf899a
-  --sha256: sha256-ZCXLc+som28/iwMBcKJhA79y49t0DamfpXHqeMyCe8g=
+  tag: 92bcc0f6e4db68bd5a6026d5c81d18e418ae44b4
+  --sha256: 0ijaykvjd1lsw5fmyrxbfhzwgfmvhvpma31g0binbggjrnsrnfnb
   subdir: network-mux
           ouroboros-network
+
+-- cabal-allow-newer
+if impl (ghc >= 9.14)
+  allow-newer:
+    -- https://github.com/haskell/aeson/issues/1155
+    , aeson:QuickCheck
+    , aeson:containers
+    , aeson:template-haskell
+
+    -- https://github.com/phadej/boring/issues/48
+    , boring:base
+
+    -- https://github.com/well-typed/canonical-json/issues
+    , canonical-json:containers
+
+    -- https://github.com/well-typed/cborg/issues/373
+    , cborg:base
+    , cborg:containers
+
+    -- https://github.com/haskellari/indexed-traversable/issues/49
+    , indexed-traversable:base
+    , indexed-traversable:containers
+    , indexed-traversable-instances:base
+
+    -- https://github.com/haskellari/qc-instances/issues/110
+    , quickcheck-instances:base
+    , quickcheck-monoids:base
+
+    -- https://github.com/haskellari/these/issues/211
+    , semialign:base
+    , semialign:containers
+
+    -- No source repository listed on Hackage. Have emailed the maintainer.
+    , serdoc-core:template-haskell
+
+    -- https://github.com/well-typed/cborg/issues/373
+    , serialise:base
+    , serialise:containers
+    , serialise:time
+
+    -- https://github.com/haskellari/these/issues/211
+    , these:base
+
+    -- https://github.com/haskellari/tree-diff/issues/102
+    , tree-diff:QuickCheck
+    , tree-diff:base
+    , tree-diff:containers
+
+    -- https://github.com/haskell-hvr/uuid/issues/95
+    , uuid-types:template-haskell
