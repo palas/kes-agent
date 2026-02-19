@@ -10,8 +10,8 @@ repository cardano-haskell-packages
     d4a35cd3121aa00d18544bb0ac01c3e1691d618f462c46129271bccf39f7e8ee
 
 index-state:
-  hackage.haskell.org 2026-02-06T18:13:59Z,
-  cardano-haskell-packages 2026-02-11T11:49:13Z,
+  , hackage.haskell.org 2026-02-19T00:44:22Z
+  , cardano-haskell-packages 2026-02-18T15:43:28Z
 
 packages:
   kes-agent
